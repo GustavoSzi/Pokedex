@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+@font-face {
+    font-family: 'pixels';
+    src:  url('../fonts/Gamepixies-8MO6n.ttf');
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'pixels', sans-serif;
+    font-size: 16px;
+}
+
+/*Component general style*/
+.pokeCard{
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center;
+    /* display: none; */
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #A3C3D9;
+    background-color: #ED1C24;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    margin: 10px 15px;
+    cursor: pointer;
+}
+
+.inside{
+    width: 170px;
+    height: 170px;
+    background-color: #FFF;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+
+    flex-direction: column;
+}
+
+.inline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.id{
+    font-size: 1rem;
+    color: rgb(196, 0, 0);
+}
+
+.name{
+    font-size: 1.5rem;
+    margin-top: -5px;
+    text-transform: capitalize;
+}
+
+.pokeImage{
+    width: 170px;
+    height: 170px;
+    margin-top: -35px;
+    margin-bottom: -30px;
+    transform: scale(70%);
+}
+
+.types{
+    position: relative;
+    bottom: 5px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
