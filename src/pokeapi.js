@@ -51,24 +51,4 @@ const getPokemons = async () =>{
     return pokeInfo;
 }
 
-
-
-
-
-
-// const getPokemonList = async() =>{
-//     return [
-//         {
-//             pokemons: await getPokemons()
-//         }
-//     ]
-// }
-
 export default getPokemons();
-export {fetchLinks}
-
-// let pokemons = [];
-
-// processFetch().then(resolved =>{
-//      resolved;
-// })

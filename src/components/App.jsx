@@ -33,7 +33,7 @@ function App() {
 
 
   function filterPokemons(filter){
-    let inputValue = filter;
+    let inputValue = filter.toLowerCase();
 
     getList(fixedList)
 
