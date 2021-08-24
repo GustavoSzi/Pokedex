@@ -12,11 +12,10 @@ This app was created with React, HTML, CSS, JavaScript and NodeJs.
 
 ## Features
 
-- See all pokemons from Kanto region, their abilities, types, weaknesses and strengths
-- Filter pokemons by their names and types
+- See all pokemons from Kanto region, their abilities and types
+- Filter pokemons by their names
 - Save your favorite Pokemon on your account
 
 ## In progress
 
-- Filter Pokemon by type(s)
 - Create an account and saving your Pokemon
