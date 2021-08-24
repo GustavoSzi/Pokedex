@@ -27,6 +27,7 @@ async function foreachLoop(element){
             });
             
         });
+        
 
         pokemons.push({
             name: pokemon.name,

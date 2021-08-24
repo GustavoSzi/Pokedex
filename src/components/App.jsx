@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import pokemons from '../pokeapi'
 import Card from './Card'
 import BigCard from './BigCard'
-import Filters from './Filters'
 import './App.css'
 
 function App() {
@@ -24,13 +23,14 @@ function App() {
       let pokeList = await pokemons;
       getList(pokeList)
       setFixedList(pokeList)
-      // console.log(list)
+      // console.log(list[0])
     }
   
     loadList()
     
   
   } , [])
+
 
   function filterPokemons(filter){
     let inputValue = filter;
@@ -45,15 +45,6 @@ function App() {
 
       getList(newList)
     }
-  }
-
-  function filterByType(type){
-    console.log(type);
-    // let newList = fixedList.filter(e => {
-    //   return e.name.includes(inputValue);
-    // })
-
-    // getList(newList)
   }
 
   function handleClick(ident){
@@ -71,9 +62,8 @@ function App() {
     <>
     <div className="header">
       <h1 className="logo">KantoDex</h1>
-      <input type="text" placeholder="Search pokemons by name" id="nameFilter" onChange={()=>{ filterPokemons(document.getElementById('nameFilter').value) } }></input>
 
-      <Filters filter={filterByType}/>
+      <input type="text" placeholder="Search pokemons by name" id="nameFilter" onChange={()=>{ filterPokemons(document.getElementById('nameFilter').value) } }></input>
 
       </div>
 
