@@ -14,3 +14,6 @@ This app was created with HTML, CSS, JavaScript and React.
 
 - See all pokemons from Kanto region, their abilities and types
 - Filter pokemons by their names
+
+
+You can access the app in https://kantodex.netlify.app
